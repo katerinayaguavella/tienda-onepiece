@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Bebasneue";
+  src: url(fuentes/bebas_neue/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: "Lemonmilk";
+  src: url(fuentes/lemon_milk/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+  font-family: "louiscafe-bold";
+  src: url(/Assets/fuentes/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+  font-family: "louiscafe";
+  src: url(fuentes/louis_george_cafe/Louis\ George\ Cafe.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--font-secondari);
+}
+
+:root {
+  /* bg-colors*/
+  --primary: #d7a748;
+  --secondary: #030303;
+  --red: #8b2323;
+
+  /*fuentes*/
+  --font: "Lemonmilk";
+  --font-secondari: "louiscafe";
+  --font-bold-l: "louiscafe-bold";
+}
+
+.header {
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+.font a {
+  font-family: "louiscafe-bold";
+  color: black;
+}
+
+.navbar {
+  gap: 30px;
+}
+
+.navbar-list a {
+  color: var(--font-secondari);
+  font-size: 20px;
+}
+
+.cart-icon {
+  height: 30 px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 10%;
+}
