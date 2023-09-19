@@ -191,9 +191,9 @@ main {
   text-align: center;
   gap: 0px;
   margin: 0 auto;
+  width: 70%;
 }
 
 #info h3 {
-  font-size: var(--font-xl);
-  font-family: var(--font-bold-l);
+  font-size: 15px;
 }
