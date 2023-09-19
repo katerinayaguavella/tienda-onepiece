@@ -9,12 +9,17 @@
 
 @font-face {
   font-family: "louiscafe-bold";
-  src: url(/Assets/fuentes/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf);
+  src: url(fuentes/louis_george_cafe/Louis\ George\ Cafe\ Bold.ttf);
 }
 
 @font-face {
   font-family: "louiscafe";
   src: url(fuentes/louis_george_cafe/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+  font-family: "Lemonmilk-bold";
+  src: url(/fuentes/lemon_milk/LEMONMILK-Bold.otf);
 }
 
 * {
@@ -23,7 +28,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: var(--font-secondari);
+  font-family: var(--font-secondari), Impact, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
 }
 
 :root {
@@ -31,11 +37,16 @@
   --primary: #d7a748;
   --secondary: #030303;
   --red: #8b2323;
+  --white: #f2f2f3;
 
   /*fuentes*/
   --font: "Lemonmilk";
   --font-secondari: "louiscafe";
   --font-bold-l: "louiscafe-bold";
+
+  --font-se: 18px;
+  --font-medium: 15px;
+  --font-xl: 35px;
 }
 
 .header {
@@ -46,7 +57,7 @@
   padding: 0 30px;
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 65px;
 }
 
 .navbar,
@@ -82,4 +93,107 @@
 
 .logo {
   width: 10%;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hero */
+
+#hero {
+  margin-top: 65px;
+  padding: 20px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: var(--font-xl);
+  color: var(--secondary);
+  min-width: 500px;
+  width: 70%;
+}
+
+.hero-info p {
+  font-size: var(--font-se);
+  width: 80%;
+}
+
+.btn {
+  font-family: var(--font-secondari);
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero-card {
+  background: var(--primary);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 300px;
+  height: 490px;
+}
+
+.hero-card-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-card-logo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-card-price {
+  display: flex;
+  justify-content: center;
+}
+
+#info {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 0px;
+  margin: 0 auto;
+}
+
+#info h3 {
+  font-size: var(--font-xl);
+  font-family: var(--font-bold-l);
 }
