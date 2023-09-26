@@ -1,0 +1,23 @@
+@media (max-width: 992px) {
+  /*HEADER*/
+
+  .navabar {
+    gap: 40px;
+  }
+
+  .header,
+  .navabar-list,
+  img,
+  ul {
+    width: 100%;
+    height: calc(50vh - 60px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+}
